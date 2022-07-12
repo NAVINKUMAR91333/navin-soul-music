@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a22b3c8a09.js" crossorigin="anonymous"></script>
+  <title>Navin Soul music.com</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="music.jpg" class="logo">
+      <nav>
+        <h1 class="title">SOUL MUSIC</h1>
+        <ul id="menulist">
+          <li><a href="">Song 1</a></li>
+          <li><a href="">song 2</a></li>
+          <li><a href="">song 3</a></li>
+          <li><a href="">song 4</a></li>
+        </ul>
+      </nav>
+      <img src="menun.png" class="icon" onclick="togglemenu()">
+
+    </div class="row">
+    <div class="col1">
+      <h2 class="Movie name">&nbsp VIK<span>RAM</span></h2><br>
+      <h3>Once-upo<span>n</span>-a-Time</h3>
+      <p>(Anirudh)</p><br>
+      <h5>size:3.32 MB</h5><br><br>
+      <button type="button" name="button" ><a href="Once-Upon-a-Time.mp3" download="Once-Upon-a-Time.mp3">Download song <br><audio src="Once-Upon-a-Time.mp3"></a></button>
+    </div>
+    <div class="col2">
+      <img src="vikram.webp" class="movie">
+    </div>
+  </div>
+  <audio src="Once-Upon-a-Time.mp3" controls class="play"></audio>
+  <div class="footer"><h6>Design by : <span>Naveen kumar</span></h6>
+</div><br>
+</div>
+  <div class="social">
+    <a href="#"><i class="fa-brands fa-google"></i></a>&nbsp;
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <script>
+    var menulist =document.getElementById("menulist");
+    menulist.style.maxHeight="0px";
+    function togglemenu(){
+      if( menulist.style.maxHeight=="0px"){
+        menulist.style.maxHeight="130px";
+      }
+      else {
+        menulist.style.maxHeight="0px";
+      }
+    }
+  </script>
+
+
+</body>
+</html>
